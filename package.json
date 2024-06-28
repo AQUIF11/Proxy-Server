@@ -1,0 +1,21 @@
+{
+  "name": "api_proxy_server",
+  "version": "1.0.0",
+  "description": "Building API Proxy server to hide API keys and to implement Rate-limiting and Caching.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Aquif R Mir",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "needle": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
