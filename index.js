@@ -16,6 +16,9 @@ app.use(limiter);
 // ALSO SINCE THIS IS A PROXY-SERVER
 app.set("trust proxy", 1);
 
+// SET STATIC FOLDER
+app.use(express.static("public"));
+
 // ROUTES
 app.use("/api", indexRoutes);
 
