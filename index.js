@@ -1,3 +1,5 @@
+const path = require("path");
+
 const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
@@ -17,7 +19,7 @@ app.use(limiter);
 app.set("trust proxy", 1);
 
 // SET STATIC FOLDER
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 // ROUTES
 app.use("/api", indexRoutes);
